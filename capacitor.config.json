@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "scrutinapp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

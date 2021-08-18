@@ -1,0 +1,7 @@
+{
+  "name": "scrutinapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

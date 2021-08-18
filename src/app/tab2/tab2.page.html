@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Resultat
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Resultat</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <br>
+  Utilisateur : exemple_utilisateur
+  <br><br><br><br>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Bureau de vote</ion-label>
+        <ion-input type="text" [(ngModel)]="bureau"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Candidat</ion-label>
+        <ion-input type="text" [(ngModel)]="candidat"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nombre de voix</ion-label>
+        <ion-input type="text" [(ngModel)]="nbvoix"></ion-input>
+      </ion-item>  
+    </ion-list> 
+    <br>
+    <ion-button [disabled]="!validations_form.valid" type="submit" expand="block">
+      Envoyer
+      <ion-icon slot="end" name="create"></ion-icon>
+    </ion-button> 
+  </form>
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>
